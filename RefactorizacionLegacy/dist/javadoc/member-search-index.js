@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"facturacion","c":"FacturacionLegacy","l":"carlcularTotal(double, int, boolean)","u":"carlcularTotal(double,int,boolean)"},{"p":"facturacion","c":"FacturacionLegacy","l":"FacturacionLegacy()","u":"%3Cinit%3E()"}];updateSearchResults();
