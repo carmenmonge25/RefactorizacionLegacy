@@ -137,9 +137,18 @@ RESULTADO:
 Tras realizar todos los cambios los test siguien siendo válidos
 <img width="615" height="861" alt="image" src="https://github.com/user-attachments/assets/7e49770a-87c3-4db1-aa67-f4da793e89b0" />
 
-2. **Documentación profesional**. Genera la documentación JavaDoc escribiendo / y pulsando *Enter* justo encima del método. Rellena los campos @param explicando qué recibe la función y el @return detallando qué devuelve.  
+2. **Documentación profesional**. Genera la documentación JavaDoc escribiendo / y pulsando *Enter* justo encima del método. Rellena los campos @param explicando qué recibe la función y el @return detallando qué devuelve.
+El IDE añade automaticamente la siguiente documentación  
+<img width="543" height="126" alt="image" src="https://github.com/user-attachments/assets/12815ab1-0c4b-499f-af3a-6a435f92bd23" />
+
+Javadoc:
+<img width="1919" height="342" alt="image" src="https://github.com/user-attachments/assets/cfcc802a-554d-43af-a88a-c2a38970c869" />
+<img width="1889" height="830" alt="image" src="https://github.com/user-attachments/assets/ae9cd7b3-8ef7-4056-a94b-4b24245baa81" />
+
 3. **Guardado en el repositorio:** Realiza un *commit* semántico en vuestro repositorio que describa exactamente lo que habéis hecho.  
    * *Ejemplo:* git commit \-m "refactor: reducción de complejidad ciclomática mediante cláusulas de guarda y nombrado semántico".
+
+
 
 # 6\. Uso de la IA
 
