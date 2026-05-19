@@ -65,7 +65,21 @@ Para llevar a cabo esta limpieza con éxito, seguiréis un procedimiento estrict
 ## Fase 1: Análisis de la Deuda Técnica
 
 1. **Verificación inicial.** Ejecuta los tests unitarios. Todo debe salir en verde. Esto os garantiza que el código original, por muy feo que sea, funciona.
+
+Creacion proyecto  
 <img width="206" height="75" alt="image" src="https://github.com/user-attachments/assets/bbf1a37f-ea36-4bbd-88ad-a84afaad7f83" />
+
+Creacion paquete  
+<img width="242" height="167" alt="image" src="https://github.com/user-attachments/assets/cd5f89eb-8645-4aaf-a04c-a41842806cc2" />
+
+Creacion Test  
+<img width="654" height="869" alt="image" src="https://github.com/user-attachments/assets/449eaa10-5c3d-4760-8042-21bc6e1c7273" />
+
+Libreria JUnit 5  
+<img width="347" height="382" alt="image" src="https://github.com/user-attachments/assets/648d66ea-f94d-46b6-b766-0e7609681341" />
+
+Validacion Tests  
+<img width="694" height="717" alt="image" src="https://github.com/user-attachments/assets/ace07fa1-d8a7-4cad-b686-d9b528331233" />
 
    
 2. **Oler el código (*Code Smells*).** El Copiloto anotará en un bloc de notas los tres grandes problemas de este código:  
