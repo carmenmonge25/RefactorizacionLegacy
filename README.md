@@ -90,14 +90,53 @@ Validacion Tests
 ## Fase 2: Refactorización Asistida por el IDE (Quirófano abierto)
 
 1. **Renombrado Seguro.** Utiliza **exclusivamente las herramientas automáticas del IDE** para cambiar los nombres de las variables en todo el documento a la vez, sin riesgo de errores tipográficos.  
-   * *Sugerencia:* cT por calcularTotal, m por importeBase, tC por tipoCliente, dV por esSocioVip.  
-2. **Extracción de Constantes.** Selecciona los números mágicos (0.25, 0.15, etc.) y usa la herramienta de extracción del IDE para crear constantes private static final en la parte superior de la clase. Usa nombres autoexplicativos como DESCUENTO\_VIP o DESCUENTO\_ESTANDAR.  
+   * *Sugerencia:* cT por calcularTotal, m por importeBase, tC por tipoCliente, dV por esSocioVip.* *
+Refactorización del nombre del método cT -> calcularTotal  
+<img width="500" height="285" alt="image" src="https://github.com/user-attachments/assets/282f996d-968a-4cad-bb59-fcfd51b49e61" />  
+
+Refactorización del nombre del parámetro m -> importeBase  
+<img width="498" height="264" alt="Captura de pantalla 2026-05-19 140050" src="https://github.com/user-attachments/assets/49771c68-beae-4a43-a2ca-44418cf7f16f" />  
+
+Refactorización del nombre del parámetro tC -> tipoCliente  
+<img width="501" height="281" alt="image" src="https://github.com/user-attachments/assets/d5044084-3ef5-4936-8ee1-6f37735a1299" />  
+
+Refactorización del nombre del parámetro dV -> esSocioVip  
+<img width="505" height="278" alt="image" src="https://github.com/user-attachments/assets/25017dbe-e7a9-42bd-8b97-de5edb4b0794" />  
+
+2. **Extracción de Constantes.** Selecciona los números mágicos (0.25, 0.15, etc.) y usa la herramienta de extracción del IDE para crear constantes private static final en la parte superior de la clase. Usa nombres autoexplicativos como DESCUENTO\_VIP o DESCUENTO\_ESTANDAR.
+
+Refactorización de extracción del dato 0.25 a la constante DESCUENTO_VIP  
+<img width="491" height="235" alt="image" src="https://github.com/user-attachments/assets/a3ff6b77-2bd7-4b79-89c8-6f35c669ab35" />  
+Hemos renombrado el nombre de la variable a DESCUENTO_VIP_EXTRA  
+<img width="500" height="266" alt="image" src="https://github.com/user-attachments/assets/5230a764-b6d6-4684-b963-c1e261f5215a" />  
+
+
+Refactorización de extracción del dato 0.15 a la constante DESCUENTO_ESTANDAR  
+<img width="490" height="246" alt="image" src="https://github.com/user-attachments/assets/cae883a7-5d4e-4eca-a1fa-f36776a07fce" />  
+Hemos renombrado la constante a DESCUENTO_VIP  
+<img width="506" height="108" alt="image" src="https://github.com/user-attachments/assets/64b6e4fb-f13e-46d3-ab58-d49b32dda356" />  
+
+
+Refactorización de extracción del dato 0.15 a la constante DESCUENTO_ESTANDAR  
+<img width="489" height="242" alt="Captura de pantalla 2026-05-19 141210" src="https://github.com/user-attachments/assets/0dd57c6d-0c40-4046-8fef-c5bdeef43b86" />  
+
+
+RESULTADO:  
+<img width="648" height="631" alt="image" src="https://github.com/user-attachments/assets/713aa4c3-8a68-4501-871a-70e76188cb4b" />  
+
+
 3. **Cláusulas de Guarda (*Guard Clauses*).** Modifica la estructura de control para "aplanar" el código. Invierte las condiciones lógicas y utiliza retornos tempranos (return) para eliminar **todos** los bloques “*else”*.  
-   * *Ejemplo conceptual:* En lugar de if (importe \> 0\) { ... } else { return 0; }, cambiadlo a if (importe \<= 0\) return 0; en la primera línea.
+
+<img width="642" height="490" alt="image" src="https://github.com/user-attachments/assets/119c6e5f-5e48-451d-a8ea-ff169c216dca" />  
+
 
 ## Fase 3: Verificación, Documentación y Entrega
 
-1. **Validación constante**. Vuelve a ejecutar los tests unitarios tras CADA pequeño cambio. ¡Deben seguir en verde\! Si alguno falla, significa que habéis roto el negocio. Usad el control de versiones (Git) para deshacer los cambios y volver a un estado seguro.  
+1. **Validación constante**. Vuelve a ejecutar los tests unitarios tras CADA pequeño cambio. ¡Deben seguir en verde\! Si alguno falla, significa que habéis roto el negocio. Usad el control de versiones (Git) para deshacer los cambios y volver a un estado seguro.
+
+Tras realizar todos los cambios los test siguien siendo válidos
+<img width="615" height="861" alt="image" src="https://github.com/user-attachments/assets/7e49770a-87c3-4db1-aa67-f4da793e89b0" />
+
 2. **Documentación profesional**. Genera la documentación JavaDoc escribiendo / y pulsando *Enter* justo encima del método. Rellena los campos @param explicando qué recibe la función y el @return detallando qué devuelve.  
 3. **Guardado en el repositorio:** Realiza un *commit* semántico en vuestro repositorio que describa exactamente lo que habéis hecho.  
    * *Ejemplo:* git commit \-m "refactor: reducción de complejidad ciclomática mediante cláusulas de guarda y nombrado semántico".
