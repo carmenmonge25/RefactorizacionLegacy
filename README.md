@@ -64,7 +64,10 @@ Para llevar a cabo esta limpieza con éxito, seguiréis un procedimiento estrict
 
 ## Fase 1: Análisis de la Deuda Técnica
 
-1. **Verificación inicial.** Ejecuta los tests unitarios. Todo debe salir en verde. Esto os garantiza que el código original, por muy feo que sea, funciona.  
+1. **Verificación inicial.** Ejecuta los tests unitarios. Todo debe salir en verde. Esto os garantiza que el código original, por muy feo que sea, funciona.
+<img width="206" height="75" alt="image" src="https://github.com/user-attachments/assets/bbf1a37f-ea36-4bbd-88ad-a84afaad7f83" />
+
+   
 2. **Oler el código (*Code Smells*).** El Copiloto anotará en un bloc de notas los tres grandes problemas de este código:  
    * **Números mágicos.** ¿Qué significa 0.25 o 0.15? Son valores *hardcodeados* sin contexto. Si mañana el IVA o el descuento cambian, ¿dónde los buscamos?  
    * **Variables sin significado.** Nombres como cT, m, tC o dV no aportan ninguna semántica. Nos obligan a adivinar.  
