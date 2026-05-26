@@ -21,13 +21,18 @@ public class FacturacionLegacy {
     public double carlcularTotal(double importeBase, int tipoCliente, 
             boolean esSocioVip){
         if(importeBase > 0){
+            //tipoCliente==1 (Cliente Socio)
             if(tipoCliente==1){
                 if(esSocioVip==true) return importeBase - (importeBase*
                         DESCUENTO_VIP_EXTRA);
+                //Realiza el descuento VIP EXTRA al socio
                 else return importeBase - (importeBase*DESCUENTO_VIP);
+                //Realiza el descuento VIP al socio
             }else{
+                //tipoCliente==2 (Cliente Estandar)
                 if(tipoCliente==2) return importeBase-(importeBase*
                         DESCUENTO_ESTANDAR);
+                //Realiza el descuento ESTANDAR al cliente
                 else return importeBase;
             }
         }else return 0;
